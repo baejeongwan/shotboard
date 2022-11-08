@@ -6,9 +6,9 @@ const files_to_cache = [
 ]
 
 self.addEventListener('install', e => {
-    console.log("INSTALL")
 
     e.waitUntil(caches.open(cache_name).then(cache => cache.addAll(files_to_cache)))
+    console.log("INSTALL")
 })
 
 self.addEventListener('fetch', (event) => {
