@@ -1,0 +1,16 @@
+{
+    "name": "디지털 슬레이트",
+    "shortName": "슬레이트",
+    "description": "디지털 버전 촬영용 슬레이트.",
+    "start_url": "/",
+    "display": "fullscreen",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
