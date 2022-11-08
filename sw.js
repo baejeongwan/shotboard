@@ -2,7 +2,7 @@ const cache_name = "slate-cache"
 
 
 const files_to_cache = [
-    "/"
+    "/shotboard"
 ]
 
 self.addEventListener('install', e => {
