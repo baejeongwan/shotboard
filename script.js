@@ -1,5 +1,9 @@
 const settingOffcanvas = new bootstrap.Offcanvas(document.getElementById("settingOffcanvas"))
 
+//Configure tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 let config = {
     showName: "드라이아이스 편",
     scene: 1,
@@ -76,6 +80,11 @@ function nextScene() {
 
 function prevScene() {
     document.getElementById("sceneNumInput").value = parseInt(document.getElementById("sceneNumInput").value) - 1
+}
+
+function eraseAllSet() {
+    localStorage.clear()
+    location.reload()
 }
 
 function applyConfig() {
