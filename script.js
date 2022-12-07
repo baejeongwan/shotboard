@@ -26,7 +26,8 @@ function init() {
     applyConfig()
 
     let today = new Date()
-    let dateString = today.getFullYear() + "/" + today.getMonth() + "/" + today.getDate()
+    let month = today.getMonth() + 1;
+    let dateString = today.getFullYear() + "/" +  month + "/" + today.getDate()
     document.getElementById("dateDisplay").innerText = dateString
 }
 
