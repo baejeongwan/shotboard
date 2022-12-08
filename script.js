@@ -5,10 +5,10 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 let config = {
-    showName: "드라이아이스 편",
+    showName: "프로그램 제목 입력",
     scene: 1,
-    director: "배정완",
-    studio: "과학만 영상만"
+    director: "감독이름 입력",
+    studio: "제작사 이름 입력"
 };
 
 let tempConf = {
