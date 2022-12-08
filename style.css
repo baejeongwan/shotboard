@@ -1,0 +1,40 @@
+.danger-tooltip {
+    --bs-tooltip-bg: var(--bs-danger);
+}
+
+#setCog {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .offcanvas {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    .form-control {
+        background-color: black;
+        color: white;
+    }
+
+    label {
+        color: white;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .btn-close {
+        background-color: white;
+    }
+}
