@@ -101,3 +101,12 @@ if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("/shotboard/sw.js")
     })
 }
+
+function showSlate() {
+    document.getElementById("slate").classList.remove("d-none")
+    document.getElementById("slate").classList.add("slateAppeared")
+    setTimeout(() => {
+        document.getElementById("slate").classList.remove("slateAppeared")
+        document.getElementById("slate").classList.add("d-none")
+    }, 2000);
+}
