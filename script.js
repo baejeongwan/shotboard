@@ -104,9 +104,12 @@ if ("serviceWorker" in navigator) {
 
 function showSlate() {
     document.getElementById("slate").classList.remove("d-none")
+    document.getElementById("action-text").classList.remove("d-none")
     document.getElementById("slate").classList.add("slateAppeared")
+    document.getElementById("slateEffect").play()
     setTimeout(() => {
         document.getElementById("slate").classList.remove("slateAppeared")
         document.getElementById("slate").classList.add("d-none")
+        document.getElementById("action-text").classList.add("d-none")
     }, 2000);
 }

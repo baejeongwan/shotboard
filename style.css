@@ -64,3 +64,14 @@
     transform: translate(-50%, -50%);
 
 }
+
+.action-text {
+    color: red;
+    font-weight: bold;
+    font-size: 10rem;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
